@@ -1,0 +1,397 @@
+*{
+    margin: 0%;
+    padding: 0%;
+}
+.header{
+    min-height: 100vh;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url("http://www.pixelstalk.net/wp-content/uploads/2016/10/Wallpapers-Charlotte-HD.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+nav{
+    display: flex;
+    padding: 0% 1%;
+    justify-content: space-between;
+    align-items: center;
+}
+nav img{
+    width: 350px;
+}
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
+.nav-links ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-links ul li a{
+    color: #fff;
+    text-decoration: none;
+    font-size: 13px;
+}
+.nav-links ul li:after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #5236f4;
+    display: block;
+    margin: auto;
+    transition: 0.6s;
+}
+.nav-links ul li:hover::after{
+    width: 100%;
+}
+.text-box {
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.text-box h1{
+    font-size: 45px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 14px;
+    color: #fff;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border: 1px solid #5236f4;
+    background: #5236f4;
+    transition: 1s;
+}
+
+nav .fa{
+    display: block;
+}
+
+@media (max-width: 700px){
+    .text-box h1{
+        font-size: 20px;
+    }
+    .nav-links ul li{
+        display: block;
+    }
+    .nav-links{
+        position: absolute;
+        background: #5236f4;
+        height: 100hv;
+        width: 200px;
+        top: 0%;
+        right: -200%;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa{
+        display: block;
+        color: #fff;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+    }
+    nav-links ul{
+        margin: 30px;
+    }
+}
+
+/*---Rahasia Negara---*/
+
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: rgb(0, 0, 0);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}
+.row{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{
+    flex-basis: 31%;
+    background: #fff3f3;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+
+@media (max-width: 700px) {
+    .row{
+        flex-direction: column;
+    }
+}
+
+/*Anime*/
+
+.stream{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+.stream-col{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+}
+.stream-col img{
+    width: 100%;
+}
+.layer{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5s;
+}
+.layer:hover{
+    background: rgba(226,0,0,0.7);
+}
+.layer h3{
+    width: 100%;
+    font-weight: 500;
+    color: #fff;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.cari{
+    display: flex;
+    padding: 1% 31%;
+    position: absolute;
+    top: 8%;
+    left: 10%;
+    text-align: center;
+}
+p{
+    color: #fff;
+    font-size: 35;
+}
+input{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    border-radius: 10px;
+    cursor: pointer;
+}
+input:hover{
+    border-radius: 10px;
+    border: 1px solid #5236f4;
+    background: #5236f4;
+    transition: 1s;
+}
+.batch img{
+    position: absolute;
+    top: 110%;
+    left: 20%;
+    border-radius: 10;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid blue;
+    padding: 10px 10px;
+    background: transparent;
+    cursor: pointer;
+}
+.batch img:hover{
+    border: 1px solid #5236f4;
+    background: #5236f4;
+    transition: 1s;
+}
+.batch p{
+    text-shadow: black 2px 1px 2px;
+    font-size: 20px;
+    width: 17%;
+    color: #fff;
+    position: absolute;
+    top: 112%;
+    left: 44%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid blue;
+    background: transparent;
+}
+.batch h1{
+    text-shadow: black 2px 1px 2px;
+    font-size: 20px;
+    width: 40%;
+    height: 27%;
+    color: #fff;
+    position: absolute;
+    top: 130%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid blue;
+    border-radius: 10;
+    padding: 1px 36px;
+    background: transparent;
+    cursor: pointer;
+    background: rgb(255, 255, 255);
+}
+.batch h1:hover{
+    border: 1px solid #5236f4;
+    background: #5236f4;
+    transition: 1s;
+}
+.stream-b h1{
+    width: 90%;
+    color: #fff;
+    position: absolute;
+    top: 29%;
+    left: 48%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.stream-c{
+    width: 45%;
+    height: 50%;
+    position: absolute;
+    top: 40%;
+    left: 27%;
+}
+.nime{
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    cursor: pointer;
+}
+.NextEps{
+    position: absolute;
+    top: 33%;
+    right: 28%;
+    text-shadow: black 2px 1px 2px;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.NextEps ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.NextEps ul li a{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.AllEps{
+    position: absolute;
+    top: 33%;
+    right: 45%;
+    text-shadow: black 2px 1px 2px;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.AllEps ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.AllEps ul li a{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
+.BackEps{
+    position: absolute;
+    top: 33%;
+    right: 63%;
+    text-shadow: black 2px 1px 2px;
+    background: #fff3f3;
+    border-radius: 10px;
+    padding: 15px 30px;
+    box-sizing: border-box;
+    transition: 0.5s;
+}
+.BackEps ul li{
+    list-style: none;
+    text-decoration: none;
+    display: inline-block;
+}
+.BackEps ul li a{
+    list-style: none;
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+    display: inline-block;
+}
